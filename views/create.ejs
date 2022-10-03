@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: white">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: white"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" style="color: white">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="mb-3">
+        <div class="card border-secondary">
+          <div class="card-header text-center">Nuevo Registro</div>
+          <div class="card-body">
+            <form action="/save" method="POST">
+              <div class="mb-3">
+                <label for="user" class="form-label">Usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="user"
+                  name="user"
+                  tabindex="1"
+                />
+              </div>
+              <div class="mb-3 mx-auto">
+                <label for="user" class="form-label text-center">Rol</label>
+                <select
+                  id="rol"
+                  name="rol"
+                  class="form-select"
+                  aria-label="Default select example"
+                  tabindex="2"
+                >
+                  <option value="admin" selected>Admin</option>
+                  <option value="data entry">data entry</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" tabindex="5">
+                Guardar
+              </button>
+              <a href="/" class="btn btn-secondary"> Cancelar</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
